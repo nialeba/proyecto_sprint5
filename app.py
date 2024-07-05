@@ -71,7 +71,7 @@ if hist_button: # al hacer clic en el botón
     fig3 = px.histogram(car_data, x="model_year", color='condition')
     # modificar las características del gráfico
     fig3.update_layout(
-        title='Número de vehículos por año del modelo y condición',
+        title='Distribución del número de vehículos por año del modelo y condición',
         xaxis_title= 'Año del modelo',
         yaxis_title= 'Número de vehículos'
     )
@@ -95,7 +95,7 @@ if scatter_button: # al hacer clic en el botón
     fig4 = px.scatter(car_data, x="odometer", y="price", color='year_posted', title='Relación entre el precio del vehículo y medición de odómetro por año')
     # modificar las características del gráfico
     fig4.update_layout(
-        title='Relación entre el precio del vehículo y medición de odómetro por año',
+        title='Relación entre el precio del vehículo y medición del odómetro',
         xaxis_title= 'Odómetro (km)',
         yaxis_title= 'Precio (dólares)'
     )
